@@ -2,13 +2,13 @@
 $server ="localhost";
 $username = "root";
 $password = "xerxmorphues14";
-$database = "";
+$database = "records_database";
 
 
 session_start();
 
 try {
-    $pdo = new PDO("mysql:host=$server;dbname=$db_name", $username, $password);
+    $pdo = new PDO("mysql:host=$server;dbname=$database", $username, $password);
     // set the PDO error mode to exception
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     // echo "Connected successfully";
