@@ -29,22 +29,23 @@ include "actions/pdo_conn.php";
 					<div class="section pb-5 pt-5 pt-sm-2 text-center">
 						<h6 class="mb-0 pb-3">
 						<span><i class="fas fa-user-graduate"></i>STUDENT</span>
-						DEAN</span></h6>
-			          	<input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+						<span><i class="fas fa-user-tie"></i>DEAN</span></h6>
+			          	<input class="checkbox " type="checkbox" id="reg-log" name="reg-log"/>
 			          	<label for="reg-log"></label>
 						<div class="card-3d-wrap mx-auto">
 							<div class="card-3d-wrapper">
 								<div class="card-front">
 									<div class="center-wrap">
 										<div class="section text-center">
-											<h4 class="mb-4 pb-3">STUDENT</h4>
+											<img src="https://csu.edu.ph/img/csulogo.png" alt="CSU Logo" class="logo-img">
+											<h4 class="mb-4 pb-3 ">Student Portal</h4>
 											<div class="form-group">
-												<input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
-												<i class="input-icon"></i>
+												<input type="text" name="student_id" class="form-style" placeholder="Your Student ID" id="student_id" autocomplete="off">
+												<i class="input-icon fa fa-id-card" aria-hidden="true" ></i>
 											</div>	
 											<div class="form-group mt-2">
 												<input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
-												<i class="input-icon"></i>
+												<i class="input-icon fa fa-lock" aria-hidden="true"></i>
 											</div>
 											<a href="#" class="btn mt-4">LOGIN</a>
 				      					</div>
@@ -53,14 +54,15 @@ include "actions/pdo_conn.php";
 								<div class="card-back">
 									<div class="center-wrap">
 										<div class="section text-center">
-											<h4 class="mb-4 pb-3">DEAN</h4>
+											<img src="https://csu.edu.ph/img/csulogo.png" alt="CSU Logo" class="logo-img">
+											<h4 class="mb-4 pb-3">Dean Portal</h4>
 											<div class="form-group">
 												<input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
-												<i class="input-icon"></i>
+												<i class="input-icon fa fa-envelope" aria-hidden="true"></i>
 											</div>	
 											<div class="form-group mt-2">
 												<input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
-												<i class="input-icon"></i>
+												<i class="input-icon fa fa-lock" aria-hidden="true"></i>
 											</div>
 											<a href="#" class="btn mt-4">LOGIN</a>
 				      					</div>
