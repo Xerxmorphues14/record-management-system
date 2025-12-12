@@ -15,7 +15,7 @@ include "actions/pdo_conn.php";
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
 </head>
 
@@ -27,7 +27,9 @@ include "actions/pdo_conn.php";
 			<div class="row full-height justify-content-center">
 				<div class="col-12 text-center align-self-center py-5">
 					<div class="section pb-5 pt-5 pt-sm-2 text-center">
-						<h6 class="mb-0 pb-3"><span>STUDENT</span><span>DEAN</span></h6>
+						<h6 class="mb-0 pb-3">
+						<span><i class="fas fa-user-graduate"></i>STUDENT</span>
+						DEAN</span></h6>
 			          	<input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
 			          	<label for="reg-log"></label>
 						<div class="card-3d-wrap mx-auto">
@@ -38,13 +40,13 @@ include "actions/pdo_conn.php";
 											<h4 class="mb-4 pb-3">STUDENT</h4>
 											<div class="form-group">
 												<input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
-												<i class="input-icon uil uil-at"></i>
+												<i class="input-icon"></i>
 											</div>	
 											<div class="form-group mt-2">
 												<input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
-												<i class="input-icon uil uil-lock-alt"></i>
+												<i class="input-icon"></i>
 											</div>
-											<a href="#" class="btn mt-4">submit</a>
+											<a href="#" class="btn mt-4">LOGIN</a>
 				      					</div>
 			      					</div>
 			      				</div>
@@ -53,18 +55,14 @@ include "actions/pdo_conn.php";
 										<div class="section text-center">
 											<h4 class="mb-4 pb-3">DEAN</h4>
 											<div class="form-group">
-												<input type="text" name="logname" class="form-style" placeholder="Your Full Name" id="logname" autocomplete="off">
-												<i class="input-icon uil uil-user"></i>
-											</div>	
-											<div class="form-group mt-2">
 												<input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
-												<i class="input-icon uil uil-at"></i>
+												<i class="input-icon"></i>
 											</div>	
 											<div class="form-group mt-2">
 												<input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
-												<i class="input-icon uil uil-lock-alt"></i>
+												<i class="input-icon"></i>
 											</div>
-											<a href="#" class="btn mt-4">submit</a>
+											<a href="#" class="btn mt-4">LOGIN</a>
 				      					</div>
 			      					</div>
 			      				</div>

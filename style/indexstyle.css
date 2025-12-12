@@ -7,7 +7,7 @@ body{
 	font-size: 15px;
 	line-height: 1.7;
 	color: #ccd44f;
-	background-color: #80437c;
+	background-color: #af4e4e;
 	overflow-x: hidden;
 }
 a {
@@ -72,7 +72,7 @@ h6 span{
   color: #ffeba7;
   background-color: #102770;
   font-family: 'unicons';
-  content: '\eb4f';
+  content: '';
   z-index: 20;
   top: -10px;
   left: -10px;

@@ -1,7 +1,7 @@
 <?php 
 $server ="localhost";
 $username = "root";
-$password = "xerxmorphues14";
+$password = "";
 $database = "records_database";
 
 
