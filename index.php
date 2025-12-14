@@ -38,9 +38,10 @@ include "actions/pdo_conn.php";
 									<div class="center-wrap">
 										<div class="section text-center">
 											<img src="https://csu.edu.ph/img/csulogo.png" alt="CSU Logo" class="logo-img">
-											<h4 class="mb-4 pb-3 ">Student Portal</h4>
+											<h4 class=" pb-3 ">Student Portal</h4>
+											<h3 class="text-white">Online Faculty Evaluation System</h3>
 											<div class="form-group">
-												<input type="text" name="student_id" class="form-style" placeholder="Your Student ID" id="student_id" autocomplete="off">
+												<input type="text" name="student_id" class="form-style" placeholder="Your Student ID Number" id="student_id" autocomplete="off">
 												<i class="input-icon fa fa-id-card" aria-hidden="true" ></i>
 											</div>	
 											<div class="form-group mt-2">
