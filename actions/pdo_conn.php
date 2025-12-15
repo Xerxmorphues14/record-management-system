@@ -2,7 +2,7 @@
 $server ="localhost";
 $username = "root";
 $password = "";
-$database = "records_database";
+$database = "pr_tracking_database";
 
 
 session_start();

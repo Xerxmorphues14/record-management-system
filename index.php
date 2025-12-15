@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php 
-include "actions/pdo_conn.php";
-
-
-
+<?php
+session_start();
 ?>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Records Management System</title>
+    <title>PURHCASE REQUEST TRACKING SYSTEM</title>
     <link rel="stylesheet" href="unicons.iconscout.com">
 	
     
@@ -28,8 +25,8 @@ include "actions/pdo_conn.php";
 				<div class="col-12 text-center align-self-center py-5">
 					<div class="section pb-5 pt-5 pt-sm-2 text-center">
 						<h6 class="mb-0 pb-3">
-						<span><i class="fas fa-user-graduate"></i>STUDENT</span>
-						<span><i class="fas fa-user-tie"></i>DEAN</span></h6>
+						<span><i class="fas fa-briefcase"></i>OFFICE</span>
+						<span><i class="fas fa-user-tie"></i>ADMIN</span></h6>
 			          	<input class="checkbox " type="checkbox" id="reg-log" name="reg-log"/>
 			          	<label for="reg-log"></label>
 						<div class="card-3d-wrap mx-auto">
@@ -38,16 +35,18 @@ include "actions/pdo_conn.php";
 									<div class="center-wrap">
 										<div class="section text-center">
 											<img src="https://csu.edu.ph/img/csulogo.png" alt="CSU Logo" class="logo-img">
-											<h4 class="mb-4 pb-3 ">Student Portal</h4>
+											<h4 class="mb-4 pb-3 ">Office Portal</h4>
+											<form action="actions/action-user-login.php" method="POST" name="myForm" enctype="multipart/form-data" onsubmit="return checkForm(this);">
 											<div class="form-group">
-												<input type="text" name="student_id" class="form-style" placeholder="Your Student ID" id="student_id" autocomplete="off">
+												<input type="text" name="user_name" class="form-style" placeholder="Your Username" id="user_id" autocomplete="off">
 												<i class="input-icon fa fa-id-card" aria-hidden="true" ></i>
 											</div>	
 											<div class="form-group mt-2">
-												<input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
+												<input type="password" name="password" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
 												<i class="input-icon fa fa-lock" aria-hidden="true"></i>
 											</div>
-											<a href="#" class="btn mt-4">LOGIN</a>
+											<button type="submit" name="user_id" class="btn btn-primary mt-4 fa fa-sign-in" aria-hidden="true" onclick="return checkForm(this);" >Login</button>
+											</form>
 				      					</div>
 			      					</div>
 			      				</div>
@@ -55,16 +54,18 @@ include "actions/pdo_conn.php";
 									<div class="center-wrap">
 										<div class="section text-center">
 											<img src="https://csu.edu.ph/img/csulogo.png" alt="CSU Logo" class="logo-img">
-											<h4 class="mb-4 pb-3">Dean Portal</h4>
+											<h4 class="mb-4 pb-3">Admin Portal</h4>
+											<form action="actions/action-admin-login.php" method="POST" name="myForm" enctype="multipart/form-data" onsubmit="return checkForm(this);">
 											<div class="form-group">
-												<input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
+												<input type="email" name="email" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
 												<i class="input-icon fa fa-envelope" aria-hidden="true"></i>
 											</div>	
 											<div class="form-group mt-2">
-												<input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
+												<input type="password" name="password" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
 												<i class="input-icon fa fa-lock" aria-hidden="true"></i>
 											</div>
-											<a href="#" class="btn mt-4">LOGIN</a>
+											<button type="submit" name="admin_id" class="btn btn-primary mt-4 fa fa-sign-in" aria-hidden="true">Login</button>
+											</form>
 				      					</div>
 			      					</div>
 			      				</div>
