@@ -35,10 +35,17 @@ session_start();
 									<div class="center-wrap">
 										<div class="section text-center">
 											<img src="https://csu.edu.ph/img/csulogo.png" alt="CSU Logo" class="logo-img">
+<<<<<<< HEAD
 											<h4 class="mb-4 pb-3 ">Office Portal</h4>
 											<form action="actions/action-user-login.php" method="POST" name="myForm" enctype="multipart/form-data" onsubmit="return checkForm(this);">
 											<div class="form-group">
 												<input type="text" name="user_name" class="form-style" placeholder="Your Username" id="user_id" autocomplete="off">
+=======
+											<h4 class=" pb-3 ">Student Portal</h4>
+											<h3 class="text-white">Online Faculty Evaluation System</h3>
+											<div class="form-group">
+												<input type="text" name="student_id" class="form-style" placeholder="Your Student ID Number" id="student_id" autocomplete="off">
+>>>>>>> 729ce3634590f1fe487f7e4d531d72dc3028fef1
 												<i class="input-icon fa fa-id-card" aria-hidden="true" ></i>
 											</div>	
 											<div class="form-group mt-2">

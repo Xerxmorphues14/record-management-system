@@ -1,8 +1,13 @@
 <?php 
 $server ="localhost";
 $username = "root";
+<<<<<<< HEAD
 $password = "";
 $database = "pr_tracking_database";
+=======
+$password = "xerxmorphues14";
+$database = "records_database";
+>>>>>>> 729ce3634590f1fe487f7e4d531d72dc3028fef1
 
 
 session_start();
